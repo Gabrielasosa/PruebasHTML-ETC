@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prueba Gabriela</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script>
+    // 1. Cambiar el titulo del ejercicio (ejercicio 1...)
+    $("#titulo1").html("1. Manipulando El DOM por Gabriela")
+
+    // 2. Cambiar el titulo del formulario (mi formulario)
+    //$(".TituFormu").html("Formulario de Mickey")
+    $("")
+    //3. Leer el nombre y el email cuando se pinche en enviar, si no hay un email ni nada ponerlo en rojo
+
+	$("#boton01").click(function () {
+	//saco el valor accediendo a un input de tipo text y name = nombre
+	//alert($('input:text[name=nombre]').val());
+	//saco el valor accediendo al id del input = nombre
+	alert($("#nombre").val());
+	//saco el valor accediendo al class del input = nombre   
+	alert($("#apellido").val());
+	});
+    });
+
+}   );
+
+// Mostrar RESULTADO CORRECTO en resultado.
+// 4. Limpiar los datos del formulario
+//5. Mejorar el aspecto visual del formulario con lo aprendido con Juan Alarcon
+// 6. Comprobar que el nombre o email estan vacios. Si alguno de ellos esta vacio, teneis que mostar un mensaje de error (Introduzca los datos validos) y mostar el mensaje en rojo.
+
+
+
+    </script>
+    <style>
+    .titulo1{
+ 
+    }
+
+    .selected{
+    color:red;
+    }
+
+    #boton01{
+    color: white;
+    background-color: #008CBA;
+    border-radius: 12px;
+    }
+    /*loanding de unicornio*/
+    .loading {
+    margin: 30px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: red url('https://cdn.dribbble.com/users/1056629/screenshots/3220439/unicorn.gif') no-repeat -50px center;
+    background-size: cover;
+    }
+
+    .loading2 {
+    margin: 30px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: transparent url('https://derpicdn.net/img/2017/6/25/1471445/full.gif') no-repeat center center;
+    background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <div id="cuerpo">
+        <div id="titulo1">
+      Ejercicio 1 - Manipulacion del DOM
+      </div>
+      <div id="empi-formu">
+        <div class="TituFormu">
+          Mi formulario
+        </div>
+            <form class="formulario">
+            <fieldset>
+            <legend>Informacion Personal:</legend>
+            Nombre:<br>
+            <input type="text" name="Nombre: " value="Mickey" id="nombre"><br>
+            Apellido:<br>
+            <input type="text" name="Apellido: " value="Mouse" id="apellido"><br>
+    
+            E-mail:<br> <input id="email" type="text" name="email"><br>
+            <button id="boton01">
+            Enviar
+            </button>
+    
+          </fieldset>
+          </form>
+          <div class="loading2"></div>
+        <div id="resultado">
+        RESULTADO
+      </div>
+      </div>
+    </div>
+    
+</body>
+</html>

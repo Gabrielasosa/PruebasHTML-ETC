@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Telefono</title>
+<meta charset="utf-8">
+</head>
+<body>
+	<h1>Fotografía</h1>
+	<a href="../">Inicio</a>
+	<a href="../nosotros/">nosotros</a>
+	<a href="../servicio/">Servicios</a>
+	<a href="../tienda/">Tienda</a>
+	<a href="./">Contactos</a>
+	<h1>Telefono:</h1>
+	<a href="tel:66666666666">Llamar</a>
+	<a href="whatsapp://send?text=buenos dias&phone=:+000000000">abrir whatsapp</a>
+	       
+        
+    <table bordercolor="blue"
+       cellspacing="20"
+       cellpadding="20"
+       border="1"
+       align="center"
+       style="border:10px red solid;width:190px;background-color: black;color:white"
+      >
+        
+        <tr>
+           <th colpans="2">Fotografia</th>
+           <th>Nombre</th>
+           <th>Apellidos</th>
+           <th style="color:firebrick"
+                colspan="4"
+                >Notas</th>
+        </tr>
+    
+        <tr>
+           <td>
+               <img src="../img/fondo.jpg" alt="paisaje" width="80px">
+           </td>
+
+           <td>
+               Natalia 
+           </td>
+
+           <td>
+                Lara
+           </td>
+
+           <td style="background-color: aqua;color:black;text-decoration: underline">
+                10
+           </td>
+           <td>
+            9
+           </td>
+           <td>
+                9           </td>
+           <td>
+            8
+           </td>
+        </tr>
+
+        <tr>
+           <td>
+               <img src="../img/fondo2.jpg" alt="naturaleza" width="80px">
+           </td>
+
+           <td>
+               Roberto 
+           </td>
+
+           <td>
+                Garzón
+           </td>
+
+           <td style="background-color: aqua;color:black;text-decoration: underline">
+                10
+           </td>
+           <td>
+            9
+           </td>
+           <td>
+                9           </td>
+           <td>
+            8
+           </td>
+        </tr>
+        
+        
+    </table>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required="">
+            <br><br>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass"><br><br>
+            <label for="fichero">Fichero:</label>
+            <input type="file" name="fichero" id="fichero">
+            <br>
+            <br>
+            <label for="fichero">Sexo:</label>
+            <input type="radio" name="genero" id="masculino" value="masculino"> 
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" value="femenino" id="femenino"> 
+            <label for="femenino">Femenino</label>
+            <input type="radio" name="genero" value="otro" id="otro" checked="">  <label for="otro">Otro</label>
+        </fieldset>
+<br>
+<fieldset>
+            <legend>Dirección</legend>
+            <label>País:</label>
+            <select nma="pais" id="pais" required="">
+                <option value=""></option>
+                <optgroup label="Europa">
+                    <option value="ES">España</option>
+                    <option value="FR">Francia</option>
+                    <option value="IT">Italia</option>
+                </optgroup>
+                <optgroup label="América">
+                    <option value="MX">México</option>
+                    <option value="AR">Argentina</option>
+                </optgroup>
+            </select>   
+        </fieldset>
+
+<br>
+<fieldset>
+               <legend>Observaciones</legend>
+                <textarea name="observaciones" rows="10" cols="18" style="width: 100%"></textarea>
+        </fieldset>
+<input type="checkbox" name="llamar" id="llamar" value="si" checked>
+<label for="llamar">Llámame</label>
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Restablecer">
+</form>
+</body>
+</html>
