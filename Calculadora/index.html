@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculadora Gabriela</title>
+  <script type="text/javascript" src="js/javaScriptCalculadora.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/cssCalculadora.css">
+</head>
+
+<body>
+  <center>
+    <h1>Calculadora Gabriela</h1>
+    <form name="f1">
+      <br>
+      <input type="text" name="txtcaja1"><!--En esta caja mostramos las operaciones-->
+      <br>
+      <input type="text" name="txtcaja2" value="0"><!--En esta caja mostramos los resultados-->
+      <br>
+      <input type="button" class="button" value="euro" onClick="euro()"><!--Convertimos a euros-->
+      <input type="button" class="button"  value="dollar" onClick="dollar()"><!--Convertimos a dolares-->
+
+      <input type="button" onClick="potencia()" value="x²">
+      <input type="button" onClick="escribir('')" value="¹/×">
+      <br>
+      <input type="button" class="clear" onClick="document.f1.txtcaja2.value='0'" value="CE">
+      <input type="button" class="clear" onClick="document.f1.reset(); blocdel = false;" value="C">
+      <input type="button" class="clear" onClick="deletecarac()" value="◄">
+
+      <input type="button" class="arit" onClick="arit('/')" value="÷">
+      <br>
+      <input type="button" onclick="escribir(this.value)" value="7">
+      <input type="button" onclick="escribir(this.value)" value="8">
+      <input type="button" onclick="escribir(this.value)" value="9">
+      <input type="button" class="arit" onClick="arit('*')" value="×">
+      <br>
+      <input type="button" onclick="escribir(this.value)" value="4">
+      <input type="button" onclick="escribir(this.value)" value="5">
+      <input type="button" onclick="escribir(this.value)" value="6">
+      <input type="button" class="arit" onClick="arit('-')" value="-">
+      <br>
+      <input type="button" onclick="escribir(this.value)" value="1">
+      <input type="button" onclick="escribir(this.value)" value="2">
+      <input type="button" onclick="escribir(this.value)" value="3">
+      <input type="button" class="arit" onClick="arit('+')" value="+">
+      <br>
+      <input type="button" class="arit" onClick="masmenos()" value="±">
+      <input type="button" onclick="escribir(this.value)" value="0">
+      <input type="button" onClick="escribir('.')" value=".">
+      <input type="button" class="igual" onClick="calcular()" value="=">
+
+      <!--Empiza el cmabio de divisas
+<br>
+<input type="text" id="dollar"><input type="button" value="€->$" onclick="convertir_a_dollares(document.getElementById('dollar').value) escribir(this.value)">
+Convertir de euro a dollar
+<br>
+<input type="text" id="euros"><input type="button" value="$->€" onclick="convertir_a_euros(document.getElementById('euros').value)">
+Convertir de dollar a Euro
+<br>
+<div id="total">-->
+      </div>
+    </form>
+  </center>
+</body>
+
+</html>
+
+<!---->
